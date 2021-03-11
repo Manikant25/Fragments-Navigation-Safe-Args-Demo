@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    android:label="Navigation View"
+    app:startDestination="@id/enterDetailsFragment">
+
+    <fragment
+        android:id="@+id/enterDetailsFragment"
+        android:name="com.mani.eu.navigationsimpledemo.EnterDetailsFragment"
+        android:label="Enter Details Fragment"
+        tools:layout="@layout/fragment_enter_details" />
+
+    <action
+        android:id="@+id/action_enterDetailsFragment_to_verifyDetailsFragment"
+        app:destination="@id/verifyDetailsFragment" />
+
+    <fragment
+        android:id="@+id/verifyDetailsFragment"
+        android:name="com.mani.eu.navigationsimpledemo.VerifyDetailsFragment"
+        android:label="Verify Details Fragment"
+        tools:layout="@layout/fragment_verify_details" />
+
+</navigation>
